@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d8f394392d.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+
+
+<body>
+
+<!-- Nav bar-->
+<div class="wrapperOfForm d-none">
+    <div class="modalWindow">
+        <form action="" class="formReg">
+            <button class="closeRegForm">x</button>
+            <label class="label">Your name:
+                <input type="text" class="form-control username" placeholder="Your name" aria-label=""
+                       aria-describedby="button-addon2">
+            </label>
+            <label class="label">Your password:
+                <input type="password" class="form-control password" placeholder="Your password" aria-label=""
+                       aria-describedby="button-addon2">
+            </label>
+            <label class="label">Confirm password:
+                <input type="password" class="form-control confirmPassword" placeholder="Confirm password" aria-label=""
+                       aria-describedby="button-addon2">
+            </label>
+            <button type="button" class="btn btn-dark" disabled>Register</button>
+        </form>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger" >
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-futbol"></i> Manchester United</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: unset !important">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Download</a>
+                </li>
+            </ul>
+            <form class="form-inline my-3 my-lg-1">
+                <button class="btn btn-outline-light my-2 signUpButton" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="position-fixed toasts" style="z-index: 1221; position:fixed; top: 20px;right: 20px;">
+    <div id="usernameToastWarn" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Username is empty
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+    <div id="passwordToastWarn" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Passwords doesn't match
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+    <div id="success" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                You have successfully registered
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+    <div id="error" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Please write correct name or password
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+    <div id="getMoreInfo" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                To get more info, tap to this link <a href="#">Link</a>
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+<!-- Main-->
+
+<section class="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro_inner">
+                    <h1 class="intro_title" align="center">"Glory, glory, Manchester United"</h1>
+                    <h2 class="sup_title" align="center">the world's best football team website</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col btn2">
+
+                <button class="btn btn-outline-light my-2 my-sm-0 col-lg-3 col-md-4 col-sm-6" type="submit"
+                        style="width:200px; height:90px;"><i></i> News
+                </button>
+                <button class="btn btn-outline-light my-2 my-sm-0 col-lg-3 col-md-4 col-sm-6" type="submit"
+                        style="width:200px; height:90px;"><i></i> Shop
+                </button>
+                <button class="btn btn-outline-light my-2 my-sm-0 col-lg-3 col-md-4 col-sm-6" type="submit"
+                        style="width:200px; height:90px;"><i></i> Videos
+                </button>
+                <button class="btn btn-outline-light my-2 my-sm-0 col-lg-3 col-md-4 col-sm-6" type="submit"
+                        style="width:200px; height:90px;"><i></i> Fixtures
+                </button>
+                <button class="btn btn-outline-light my-2 my-sm-0 col-lg-3 col-md-4 col-sm-6" type="submit"
+                        style="width:200px; height:90px;"><i></i> Players
+                </button>
+                <button class="btn btn-outline-light my-2 my-sm-0 col-lg-3 col-md-4 col-sm-6" type="submit"
+                        style="width:200px; height:90px;"><i></i> Tickets
+                </button>
+                <button class="btn btn-outline-light my-2 my-sm-0 col-lg-3 col-md-4 col-sm-6" type="submit"
+                        style="width:200px; height:90px;"><i></i> More
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- Features-->
+
+<section id="features" ;>
+    <div class="row">
+        <div class="feature-box col-lg-4">
+            <i class="fas fa-user-tie fa-6x icon"></i>
+            <h3>Managers</h3>
+            <p>Managers of Manchester United</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+            <i class="fas fa-user-friends fa-6x icon"></i>
+            <h3>Full line-up</h3>
+            <p>Line-up to the next game</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+            <i class="fas fa-child fa-6x icon"></i>
+            <h3>Academy players</h3>
+            <p>Watch our future stars in academy</p>
+        </div>
+    </div>
+
+    <!-- Testimonials-->
+
+    <section id="testimonials">
+
+        <div id="carouselControls" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Cristiano-Ronaldo.jpg" alt="player-profile" class="testimonial-img">
+                    <h2>"It’s a new year we have to change the page. We have many things to win. We have to believe that
+                        or it will be a nightmare. I’m here to help. When they need my support and advice, I will be the
+                        number one to help".</h2>
+                    <em>Cristiano Ronaldo, Portugal</em>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/de-gea.jpg" alt="player-profile" class="testimonial-img">
+                    <h2>"You have to give 100 per cent every time in training and in the games. Let’s see. It’s just the
+                        beginning, it’s been a couple of weeks, so let’s see in the future. If we concede fewer goals,
+                        then we have top players up front who are going to score goals and win games."</h2>
+                    <em>David de Gea, Spain</em>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/bruno.jpg" alt="player-profile" class="testimonial-img">
+                    <h2>"As players we want to win so for the club, we know we represent a big club and trophies are a
+                        part of this club. It's important of course, everyone knows that, and most important for us is
+                        doing what we have to do, what we have trained to do and try to win the game.".</h2>
+                    <em>Bruno Fernandes, Portugal</em>
+                </div>
+            </div>
+            <a class="carousel-control-prev" type="button" data-target="#carouselControls" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" type="button" data-target="#carouselControls" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+
+    </section>
+</section>
+<!-- JavaScript Bundle with Popper -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
